@@ -126,7 +126,7 @@ export default function Checkout(props) {
                 }`}
                 onInput={async (e) => {
                   await setPhoneNumber(e.target.value);
-                  if (isValidPhoneNumber(phoneNumber))
+                  if (isValidPhoneNumber(e.target.value))
                     await setPhoneNumberValid(true);
                   else await setPhoneNumberValid(false);
                 }}
@@ -141,8 +141,7 @@ export default function Checkout(props) {
                 }`}
                 onInput={async (e) => {
                   await setCardNumber(e.target.value);
-                  console.log(isValidCardNumber(cardNumber));
-                  if (isValidCardNumber(cardNumber))
+                  if (isValidCardNumber(e.target.value))
                     await setCardNumberValid(true);
                   else await setCardNumberValid(false);
                 }}
