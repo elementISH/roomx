@@ -73,9 +73,7 @@ function teamID() {
 }
 
 export default function Checkout(props) {
-  const [phoneNumber, setPhoneNumber] = useState("");
   const [phoneNumberValid, setPhoneNumberValid] = useState(false);
-  const [cardNumber, setCardNumber] = useState("");
   const [cardNumberValid, setCardNumberValid] = useState(false);
   const [teamName, setTeamName] = useState("");
   const [teamNameValid, setTeamNameValid] = useState(false);
@@ -125,7 +123,6 @@ export default function Checkout(props) {
                   !phoneNumberValid ? "input-error" : ""
                 }`}
                 onInput={async (e) => {
-                  await setPhoneNumber(e.target.value);
                   if (isValidPhoneNumber(e.target.value))
                     await setPhoneNumberValid(true);
                   else await setPhoneNumberValid(false);
@@ -140,7 +137,6 @@ export default function Checkout(props) {
                   !cardNumberValid ? "input-error" : ""
                 }`}
                 onInput={async (e) => {
-                  await setCardNumber(e.target.value);
                   if (isValidCardNumber(e.target.value))
                     await setCardNumberValid(true);
                   else await setCardNumberValid(false);
