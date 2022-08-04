@@ -1,0 +1,21 @@
+// abstract
+
+@import "~bootstrap/scss/bootstrap";
+@import "./abstract/generic.scss";
+
+// partials/layout
+
+@import "./layout/navbar.scss";
+
+@import "./layout/footer.scss";
+
+// pages
+
+@import "./pages/home.scss";
+@import "./pages/cart.scss";
+@import "./pages/faq.scss";
+@import "./pages/checkout.scss";
+
+// responsive style
+
+@import "abstract/responsive.scss";

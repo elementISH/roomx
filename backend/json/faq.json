@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "question": "Are we forever locked down inside the room if we can't find a way out?",
+        "answer": "No! All our escape rooms are equipped with emergency exit buttons. If you need to excuse yourself to the bathroom or need to leave the room, you should radio the Game Master to let them know your intentions, so they can respond accordingly. Although you're free to go at any time, we do encourage all players to visit the bathroom beforehand, to ensure everyone's game play and immersion in the game is not disrupted."
+    },
+    {
+        "id": 2,
+        "question": "Are claustrophobic people allowed to inside the escape room?",
+        "answer": "Great new! not at all, our escape rooms aren't really locked nor small in size. We've also determined the minimum to maximum player count really carefully to make sure everyone will have plenty of room and enjoy their time! however note that the rooms are made for a horror theme which may include some tight spaces and dim lit rooms so take care!"
+    },
+    {
+        "id": 3,
+        "question": "Are we obligated to play with strangers if we don't reach the maximum player count?",
+        "answer": "Not at all, all our escape rooms are a private experience, meaning you will not be paired up with strangers unless you ask for it!"
+    },
+    {
+        "id": 4,
+        "question": "How many rooms are there per adventure?",
+        "answer": "Part of the adventure is to discover this with your team mates, so you'll have to play each of the themes to find out!"
+    },
+    {
+        "id": 5,
+        "question": "Is there a dress code i should stick to?",
+        "answer": "That depends on the theme you picked, some games include climbing and crawling which wouldn't be appropriate with a dress or a skirt, so check up with the theme you chose and contact us for further details! other than that enjoy, do make sure to wear for comfort and movement."
+    },
+    {
+        "id": 6,
+        "question": "What can I bring into the escape room, and what not?",
+        "answer": "All you need is your favourite teammates, your inner detective and puzzle solving skills! If you wear reading glasses be sure to bring them as well! We do provide lockers free of charge for storing phones, cameras, purses, etc. ( Sorry, no recording devices are allowed in our rooms or any food/drinks )"
+    },
+    {
+        "id": 7,
+        "question": "Are the escape rooms physically demanding? if im not fit can i enter?",
+        "answer": "Our escape games are designed for you to use your wits, and not meant to be physically demanding! Although you should dress for movement, our indoor escape games do not require running, jumping, or any physical strength, however our outdoor rooms may require that so check up with yourself! No force is required for any of our indoor puzzles, just mental strength!"
+    },
+    {
+        "id": 8,
+        "question": "Are there different difficulty levels for each theme/room?",
+        "answer": "All of our themes are designed to have the same level of difficulty, and are meant to be extremely challenging. Each theme consists of different styles of puzzles, in order to challenge all of your mental faculties.  Of course, the puzzles among our various themes are all different, and whether players find some puzzles easier or more challenging to solve is unique to each individual. "
+    }
+]

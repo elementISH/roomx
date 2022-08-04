@@ -1,0 +1,42 @@
+.board {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+  height: 100px;
+  align-self: center;
+
+  .plank {
+    background: #808080;
+    width: 50vw;
+    height: 15vh;
+    position: absolute;
+  }
+
+  .plank1 {
+    opacity: 0.05;
+    transform: rotate(3deg);
+  }
+
+  .plank2 {
+    opacity: 0.2;
+    transform: rotate(-6deg);
+  }
+
+  .plank3 {
+    opacity: 0.1;
+    top: 30%;
+    transform: rotate(6deg);
+  }
+
+  .caption {
+    position: absolute;
+    font-family: umbrage;
+    top: 50%;
+    right: 15%;
+    color: $secondaryColor;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+  }
+}

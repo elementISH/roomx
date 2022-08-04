@@ -1,0 +1,52 @@
+@import "./variables.scss";
+
+* {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+  background-color: $backgroundColor;
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.page-container {
+  max-width: 1170px;
+  padding: 0px;
+}
+
+.animate {
+  animation: fadeFromBottom 1s ease-in-out;
+}
+
+.add-pointer {
+  cursor: pointer;
+}
+
+.react-icon {
+  font-size: 18px;
+  color: white;
+  // margin-right: 15px;
+}
+
+.icon-margin {
+  margin-right: 15px;
+}
+
+.react-icon--dark {
+  color: $darkBackgroundColor !important;
+}
+
+.card-divider {
+  border: solid 1px $greyColor;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
