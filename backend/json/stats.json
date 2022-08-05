@@ -1,20 +1,24 @@
 [
     {
+        "key": 1,
         "number": 6,
         "indicator": "rooms",
         "icon": "arrow-right-to-bracket"
     },
     {
+        "key": 2,
         "number": 275,
         "indicator": "locks",
         "icon": "lock"
     },
     {
+        "key": 3,
         "number": 35132,
         "indicator": "players",
         "icon": "users"
     },
     {
+        "key": 4,
         "number": 60,
         "indicator": "mins",
         "icon": "hourglass-half"

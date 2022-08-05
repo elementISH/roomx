@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 
 export default function Rooms(props) {
   const { data, error, isLoading } = useGetDataQuery(props.query);
+  if (error) console.error("error:", error);
+  console.info("loading status:", isLoading);
   const navigate = useNavigate();
 
   return (
@@ -35,12 +37,12 @@ export default function Rooms(props) {
                 navigate("/rooms");
               }}
             >
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
+              <div className="line"></div>
+              <div className="line"></div>
+              <div className="line"></div>
+              <div className="line"></div>
+              <div className="line"></div>
+              <div className="line"></div>
               view more
             </button>
           </div>

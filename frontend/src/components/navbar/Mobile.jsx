@@ -7,8 +7,8 @@ export default function Mobile() {
 
   return (
     <>
-      <input type="checkbox" name="" id="" class="check" />
-      <ul class="menu-items">
+      <input type="checkbox" name="" id="" className="check" />
+      <ul className="menu-items">
         <li>
           <p
             onClick={() => {
@@ -53,10 +53,10 @@ export default function Mobile() {
           </p>
         </li>
       </ul>
-      <div class="ham-menu">
-        <span class="line line1"></span>
-        <span class="line line2"></span>
-        <span class="line line3"></span>
+      <div className="ham-menu">
+        <span className="line line1"></span>
+        <span className="line line2"></span>
+        <span className="line line3"></span>
       </div>
     </>
   );
