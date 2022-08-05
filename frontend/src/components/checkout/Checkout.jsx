@@ -69,7 +69,7 @@ function years() {
 }
 
 function teamID() {
-  return Math.floor(Math.random() * (1000 - 100 + 1) + 100);
+  return +Date.now();
 }
 
 export default function Checkout(props) {
@@ -98,7 +98,7 @@ export default function Checkout(props) {
 
       <div className="billing_information">
         {dataValid ? (
-          <QRCode value={`${teamName}--${teamID()}`} size="175" />
+          <QRCode value={`${teamName}--${teamID()}`} size={+"175"} />
         ) : (
           <>
             <div className="team__name__container data-container">
