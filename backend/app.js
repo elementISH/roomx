@@ -2,6 +2,7 @@ const EXPRESS = require("express"); //Set up express
 const APP = EXPRESS();
 let dataRooms;
 let dataFaq;
+let dataStats;
 try {
   dataRooms = require("./json/rooms.json");
 } catch (error) {
@@ -11,6 +12,11 @@ try {
   dataFaq = require("./json/faq.json");
 } catch (error) {
   dataFaq = undefined;
+}
+try {
+  dataStats = require("./json/stats.json");
+} catch (error) {
+  dataStats = undefined;
 }
 const PORT = 8080;
 const ROUTER = EXPRESS.Router();
@@ -35,6 +41,11 @@ ROUTER.get("/rooms/:max", (req, res) => {
 ROUTER.get("/faq", (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.json(dataFaq);
+});
+
+ROUTER.get("/stats", (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.json(dataStats);
 });
 
 APP.use(BODYPARSER.urlencoded({ extended: true }));

@@ -1,0 +1,22 @@
+[
+    {
+        "number": 6,
+        "indicator": "rooms",
+        "icon": "arrow-right-to-bracket"
+    },
+    {
+        "number": 275,
+        "indicator": "locks",
+        "icon": "lock"
+    },
+    {
+        "number": 35132,
+        "indicator": "players",
+        "icon": "users"
+    },
+    {
+        "number": 60,
+        "indicator": "mins",
+        "icon": "hourglass-half"
+    }
+]

@@ -1,11 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useGetDataQuery } from "../../../slices/dataApi";
 
-export default function Status() {
+export default function Status(props) {
+  const { data, error, isLoading } = useGetDataQuery(props.query);
+
   return (
     <>
       <div className="status__container">
         <div className="status container">
-          <div className="state">
+          {/* <div className="state">
             <p className="number">6</p>
             <p className="indicator">rooms</p>
             <FontAwesomeIcon
@@ -31,16 +34,19 @@ export default function Status() {
               className="react-icon"
               style={{ fontSize: "22px" }}
             />
-          </div>
-          <div className="state">
-            <p className="number">60</p>
-            <p className="indicator">mins</p>
-            <FontAwesomeIcon
-              icon="hourglass-half"
-              className="react-icon"
-              style={{ fontSize: "22px" }}
-            />
-          </div>
+          </div> */}
+          {data &&
+            data?.map((state) => (
+              <div className="state">
+                <p className="number">{state.number}</p>
+                <p className="indicator">{state.indicator}</p>
+                <FontAwesomeIcon
+                  icon={state.icon}
+                  className="react-icon"
+                  style={{ fontSize: "22px" }}
+                />
+              </div>
+            ))}
         </div>
       </div>
     </>

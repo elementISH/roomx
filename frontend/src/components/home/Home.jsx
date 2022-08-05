@@ -8,7 +8,7 @@ export default function Home(props) {
     <>
       <VideoBanner />
       <HowToPlay />
-      <Status />
+      <Status query="stats" />
       <Rooms query="rooms/3" home />
     </>
   );
