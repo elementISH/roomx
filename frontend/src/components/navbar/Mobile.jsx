@@ -1,4 +1,3 @@
-import logo from "../../content/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
 
