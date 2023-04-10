@@ -1,8 +1,6 @@
 const EXPRESS = require("express"); //Set up express
 const APP = EXPRESS();
-let dataRooms;
-let dataFaq;
-let dataStats;
+let dataRooms, dataFaq, dataStats;
 try {
   dataRooms = require("./json/rooms.json");
 } catch (error) {
