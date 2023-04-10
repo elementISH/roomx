@@ -1,0 +1,91 @@
+.howToPlay {
+  display: flex;
+  flex-direction: column;
+  .board {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 50%;
+    height: 100px;
+    align-self: center;
+
+    .plank {
+      background: #808080;
+      width: 50vw;
+      height: 15vh;
+      position: absolute;
+    }
+
+    .plank1 {
+      opacity: 0.05;
+      transform: rotate(3deg);
+    }
+
+    .plank2 {
+      opacity: 0.2;
+      transform: rotate(-6deg);
+    }
+
+    .plank3 {
+      opacity: 0.1;
+      top: 30%;
+      transform: rotate(6deg);
+    }
+
+    .caption {
+      position: absolute;
+      font-family: umbrage;
+      top: 50%;
+      right: 15%;
+      color: $secondaryColor;
+      text-transform: uppercase;
+      font-size: 2em;
+      text-align: center;
+    }
+  }
+
+  .bubbles {
+    padding-top: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .info__bubble {
+      padding: 20px;
+      display: flex;
+      width: fit-content;
+      flex-direction: column;
+      .bubble {
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        background-color: $secondaryColor;
+        align-self: center;
+        .logo {
+          width: inherit;
+          height: inherit;
+          display: flex;
+          justify-content: center;
+          .logo__img {
+            width: calc(100% - 50px);
+            height: calc(100% - 50px);
+            align-self: center;
+          }
+        }
+      }
+      .caption {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        font-size: larger;
+        .caption__text {
+          color: white;
+        }
+        .caption__subtext {
+          font-family: umbrage;
+          color: #0f0f0f;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
