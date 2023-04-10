@@ -14,12 +14,24 @@
       .number {
         font-family: "Aquire", sans-serif;
         font-size: 30px;
-        color: white;
+        color: $secondaryColor;
         position: relative;
         text-align: center;
         border-radius: 30px;
         &:hover {
-          box-shadow: 0 0 20px 10px rgba(230, 30, 10, 0.6);
+          &:before {
+            height: 0;
+          }
+        }
+        &:before {
+          transition: height 1s ease;
+          content: attr(data-text);
+          position: absolute;
+          overflow: hidden;
+          height: 40px;
+          color: white;
+          text-align: center;
+          top: 0;
         }
       }
       .indicator {

@@ -8,7 +8,7 @@ const initialState = {
 
 export const roomsFetch = createAsyncThunk("rooms/roomsFetch", async () => {
   try {
-    const response = await axios.get("http://localhost:8080/rooms");
+    const response = await axios.get("https://roomx-provider.vercel.app/rooms");
     return response.data;
   } catch (error) {
     console.log(error);

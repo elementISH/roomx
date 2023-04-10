@@ -13,7 +13,9 @@ export default function Status(props) {
           {data &&
             data?.map((state) => (
               <div key={state.key.toString()} className="state">
-                <p className="number">{state.number}</p>
+                <p className="number" data-text={state.number}>
+                  {state.number}
+                </p>
                 <p className="indicator">{state.indicator}</p>
                 <FontAwesomeIcon
                   icon={state.icon}
