@@ -118,6 +118,9 @@
     padding: 0 !important;
     justify-content: center;
   }
+  .menu-items {
+    top: 40px;
+  }
   .nav-links {
     display: flex;
     flex-wrap: wrap;
@@ -163,9 +166,12 @@
   }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 380px) {
   .howToPlay {
     padding-top: 0;
+  }
+  .menu-items {
+    top: 35px;
   }
   .menu-items {
     font-size: 0.7rem;
@@ -199,5 +205,13 @@
     .effect-apollo {
       min-width: 230px !important;
     }
+  }
+}
+@media (max-width: 320px) {
+  .menu-items {
+    top: 30px;
+  }
+  .ham-menu {
+    padding: 5px 30px 0px 30px;
   }
 }

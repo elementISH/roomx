@@ -13,6 +13,7 @@ export default function Mobile() {
             onClick={() => {
               navigate("/");
             }}
+            className="add-pointer"
           >
             Home
           </p>
@@ -25,6 +26,7 @@ export default function Mobile() {
             onClick={() => {
               navigate("/rooms");
             }}
+            className="add-pointer"
           >
             rooms
           </p>
@@ -34,6 +36,7 @@ export default function Mobile() {
             onClick={() => {
               navigate("/faq");
             }}
+            className="add-pointer"
           >
             faq
           </p>
@@ -43,6 +46,7 @@ export default function Mobile() {
             onClick={() => {
               navigate("/cart");
             }}
+            className="add-pointer"
           >
             <FontAwesomeIcon
               icon="bag-shopping"
