@@ -1,8 +1,8 @@
 import { useState } from "react";
 import QRCode from "react-qr-code";
-import PrintComponents from "react-print-components";
 import { useDispatch } from "react-redux";
 import { clearCart } from "../../slices/cartSlice";
+import Print from "./Print";
 const isValidPhoneNumber = (number) => {
   const regex = new RegExp("^[0-9]{7,15}$");
   if (!regex.test(number)) {
@@ -112,14 +112,12 @@ export default function Checkout(props) {
                 size={+"175"}
               />
             </div>
-            <PrintComponents
-              trigger={<button className="btn btn-warning">Print</button>}
-            >
+            <Print trigger={<button className="btn btn-warning">Print</button>}>
               <QRCode
                 value={`${teamName.replaceAll(" ", "_")}--${teamID()}`}
                 size={+"175"}
               />
-            </PrintComponents>
+            </Print>
           </>
         ) : (
           <>
