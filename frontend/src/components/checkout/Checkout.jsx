@@ -112,7 +112,9 @@ export default function Checkout(props) {
                 size={+"175"}
               />
             </div>
-            <PrintComponents trigger={<button>Print</button>}>
+            <PrintComponents
+              trigger={<button className="btn btn-warning">Print</button>}
+            >
               <QRCode
                 value={`${teamName.replaceAll(" ", "_")}--${teamID()}`}
                 size={+"175"}
