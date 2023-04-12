@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import QRCode from "react-qr-code";
-import PrintComponents from "react-print-components";
+import ReactToPrint from "react-to-print";
 import { useDispatch } from "react-redux";
 import { clearCart } from "../../slices/cartSlice";
 const isValidPhoneNumber = (number) => {
@@ -77,6 +77,7 @@ function teamID() {
 
 export default function Checkout(props) {
   const dispatch = useDispatch();
+  const QRref = useRef();
   const [phoneNumberValid, setPhoneNumberValid] = useState(false);
   const [cardNumberValid, setCardNumberValid] = useState(false);
   const [teamName, setTeamName] = useState("");
@@ -110,18 +111,15 @@ export default function Checkout(props) {
               <QRCode
                 value={`${teamName.replaceAll(" ", "_")}--${teamID()}`}
                 size={+"175"}
+                ref={QRref}
               />
             </div>
-            <PrintComponents
-              trigger={
+            <ReactToPrint
+              trigger={() => (
                 <button className="btn btn-warning">print Qr code</button>
-              }
-            >
-              <QRCode
-                value={`${teamName.replaceAll(" ", "_")}--${teamID()}`}
-                size={+"175"}
-              />
-            </PrintComponents>
+              )}
+              content={() => QRref.current}
+            />
           </>
         ) : (
           <>
