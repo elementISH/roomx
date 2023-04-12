@@ -49,4 +49,6 @@ ROUTER.get("/stats", (req, res) => {
 APP.use(BODYPARSER.urlencoded({ extended: true }));
 APP.use(BODYPARSER.json());
 
-let server = APP.listen(PORT);
+let server = APP.listen(PORT, () => {
+  console.log("proccess running");
+});

@@ -3,7 +3,7 @@
         "id": 1,
         "title": "the asylum",
         "price": 250.00,
-        "description": "Integer sed nisi vitae eros condimentum interdum. Morbi et volutpat neque. Aliquam dignissim varius enim. Phasellus mauris dolor, mollis non eleifend quis, dignissim nec arcu. Fusce mauris mi, feugiat sed enim at",
+        "description": "The Asylum is a terrifying escape room set in an abandoned mental institution. With only one hour to escape, you must solve puzzles and clues to uncover the asylum's dark secrets. Book your experience now for a spine-chilling adventure.",
         "image": "https://tinyurl.com/22dx5umm",
         "caption": "2-5 players 60 mins",
         "rating": {
@@ -15,7 +15,7 @@
         "id": 2,
         "title": "the sherlocked",
         "price": 175.00,
-        "description": "Integer sed nisi vitae eros condimentum interdum. Morbi et volutpat neque. Aliquam dignissim varius enim. Phasellus mauris dolor, mollis non eleifend quis, dignissim nec arcu. Fusce mauris mi, feugiat sed enim at",
+        "description": "The Sherlocked escape room was notorious for its complexity. Participants had one hour to solve a series of intricate puzzles and escape. The room was designed to resemble Sherlock Holmes' study, with vintage furnishings adding to the atmosphere.",
         "image": "https://tinyurl.com/29e8aawb",
         "caption": "3-10 players 60 mins",
         "rating": {
@@ -27,7 +27,7 @@
         "id": 3,
         "title": "the laboratory",
         "price": 120.00,
-        "description": "Integer sed nisi vitae eros condimentum interdum. Morbi et volutpat neque. Aliquam dignissim varius enim. Phasellus mauris dolor, mollis non eleifend quis, dignissim nec arcu. Fusce mauris mi, feugiat sed enim at",
+        "description": "This experience is set in an old research facility. With only one hour to escape, you must solve puzzles to uncover the dark secrets of the laboratory. The room is filled with strange apparatus and eerie sounds. Book your experience now for a thrilling adventure.",
         "image": "https://tinyurl.com/28rafpfq",
         "caption": "3-6 players 60 mins",
         "rating": {
@@ -39,7 +39,7 @@
         "id": 4,
         "title": "alchemist's chamber",
         "price": 320.00,
-        "description": "Integer sed nisi vitae eros condimentum interdum. Morbi et volutpat neque. Aliquam dignissim varius enim. Phasellus mauris dolor, mollis non eleifend quis, dignissim nec arcu. Fusce mauris mi, feugiat sed enim at",
+        "description": "This experience is set in the chamber of a mad alchemist. With only an hour to uncover the alchemist's hidden plans. The room is filled with bizarre artifacts and eerie sounds, and the alchemist will stop at nothing to keep you trapped. Book now for a spine-tingling adventure.",
         "image": "https://tinyurl.com/27lyn58t",
         "caption": "3-6 players 60 mins",
         "rating": {
@@ -51,7 +51,7 @@
         "id": 5,
         "title": "Abandoned Hangar",
         "price": 350.00,
-        "description": "Integer sed nisi vitae eros condimentum interdum. Morbi et volutpat neque. Aliquam dignissim varius enim. Phasellus mauris dolor, mollis non eleifend quis, dignissim nec arcu. Fusce mauris mi, feugiat sed enim at",
+        "description": "Abandoned Hangar is a heart-pounding experience set in a decayed military hangar. With only an hour to escape, you must uncover the dark secrets within. The room is filled with rusted machinery, making your escape challenging and thrilling.",
         "image": "https://tinyurl.com/2cbwm458",
         "caption": "4-12 players 60 mins",
         "rating": {
@@ -63,7 +63,7 @@
         "id": 6,
         "title": "Chilli chills",
         "price": 350.00,
-        "description": "Integer sed nisi vitae eros condimentum interdum. Morbi et volutpat neque. Aliquam dignissim varius enim. Phasellus mauris dolor, mollis non eleifend quis, dignissim nec arcu. Fusce mauris mi, feugiat sed enim at",
+        "description": "Chilli Chills is a spine-tingling experience set in a haunted hospital. with temperature at sub-zero levels, making your escape challenging, you must uncover the dark secrets within an hour. Book now to see if you can survive the Chilli Chills",
         "image": "https://tinyurl.com/273vjgxz",
         "caption": "4-20 players 60 mins",
         "rating": {
