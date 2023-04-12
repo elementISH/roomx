@@ -3,9 +3,8 @@ import { useGetDataQuery } from "../../slices/dataApi";
 import { useNavigate } from "react-router-dom";
 
 export default function Rooms(props) {
-  const { data, error, isLoading } = useGetDataQuery(props.query);
+  const { data, error } = useGetDataQuery(props.query);
   if (error) console.error("error:", error);
-  console.info("loading status:", isLoading);
   const navigate = useNavigate();
 
   return (

@@ -26,7 +26,7 @@ export default function RoomCard(props) {
           </figcaption>
         </figure>
         <div className="content">
-          <div className="header">
+          <div className="content__header">
             <span className="header__title">{props.title}</span>
           </div>
           <div className="description">

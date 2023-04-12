@@ -9,10 +9,10 @@
     .state {
       display: flex;
       flex-direction: column;
-      width: fit-content;
       min-width: 120px;
+      max-width: 120px;
       .number {
-        font-family: "Aquire", sans-serif;
+        font-family: "Aquire";
         font-size: 30px;
         color: $secondaryColor;
         position: relative;
@@ -36,8 +36,8 @@
       }
       .indicator {
         text-align: center;
-        font-size: 35px;
-        font-family: "Aquire", sans-serif;
+        font-size: 25px;
+        font-family: "Aquire";
         color: $greyColor;
       }
     }

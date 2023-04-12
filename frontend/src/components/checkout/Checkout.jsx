@@ -1,5 +1,8 @@
 import { useState } from "react";
 import QRCode from "react-qr-code";
+import PrintComponents from "react-print-components";
+import { useDispatch } from "react-redux";
+import { clearCart } from "../../slices/cartSlice";
 const isValidPhoneNumber = (number) => {
   const regex = new RegExp("^[0-9]{7,15}$");
   if (!regex.test(number)) {
@@ -73,6 +76,7 @@ function teamID() {
 }
 
 export default function Checkout(props) {
+  const dispatch = useDispatch();
   const [phoneNumberValid, setPhoneNumberValid] = useState(false);
   const [cardNumberValid, setCardNumberValid] = useState(false);
   const [teamName, setTeamName] = useState("");
@@ -96,9 +100,29 @@ export default function Checkout(props) {
         (one ticket for all!)
       </div>
 
-      <div className="billing_information">
+      <div
+        className="billing_information"
+        style={{ gap: `${dataValid ? "10px" : "0"}` }}
+      >
         {dataValid ? (
-          <QRCode value={`${teamName}--${teamID()}`} size={+"175"} />
+          <>
+            <div style={{ backgroundColor: "white", padding: "1px" }}>
+              <QRCode
+                value={`${teamName.replaceAll(" ", "_")}--${teamID()}`}
+                size={+"175"}
+              />
+            </div>
+            <PrintComponents
+              trigger={
+                <button className="btn btn-warning">print Qr code</button>
+              }
+            >
+              <QRCode
+                value={`${teamName.replaceAll(" ", "_")}--${teamID()}`}
+                size={+"175"}
+              />
+            </PrintComponents>
+          </>
         ) : (
           <>
             <div className="team__name__container data-container">
@@ -110,7 +134,7 @@ export default function Checkout(props) {
                 }`}
                 onInput={async (e) => {
                   await setTeamName(e.target.value);
-                  if (e.target.value !== "") await setTeamNameValid(true);
+                  if (e.target.value.length >= 1) await setTeamNameValid(true);
                   else await setTeamNameValid(false);
                 }}
               />
@@ -178,8 +202,9 @@ export default function Checkout(props) {
                   className={`card__cvv--dropdown billing-dropdown ${
                     !cvvValid ? "input-error" : ""
                   }`}
+                  maxLength="3"
                   onInput={async (e) => {
-                    if (e.target.value !== "") await setCvvValid(true);
+                    if (e.target.value.length >= 2) await setCvvValid(true);
                     else await setCvvValid(false);
                   }}
                 />
@@ -208,9 +233,10 @@ export default function Checkout(props) {
                     teamNameValid &&
                     cardHoldersValid &&
                     cvvValid
-                  )
+                  ) {
                     setDataValid(true);
-                  else setDataValid(false);
+                    dispatch(clearCart());
+                  } else setDataValid(false);
                 }}
               >
                 submit!

@@ -34,8 +34,8 @@
 
     .caption {
       position: absolute;
-      font-family: "Aquire", sans-serif;
-      top: 50%;
+      font-family: "Aquire";
+      top: 30%;
       right: 15%;
       color: $secondaryColor;
       text-transform: uppercase;
@@ -81,7 +81,7 @@
           color: white;
         }
         .caption__subtext {
-          font-family: "Aquire", sans-serif;
+          font-family: "Aquire";
           color: #0f0f0f;
           font-size: 15px;
           font-weight: bold;

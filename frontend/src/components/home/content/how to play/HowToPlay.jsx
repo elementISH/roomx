@@ -12,17 +12,17 @@ export default function HowToPlay() {
         <div className="bubbles">
           <InfoBubble
             caption="BOOK ONE OF OUR ROOMS ONLINE"
-            sub="Proin a orci vitae lacus fermentum pulvinar posuere in odio. Ut accumsan sollicitudin est, malesuada malesuada velit sagittis eget."
+            sub="start by selecting one of our unique and challenging rooms. We recommend arriving 10-15 minutes early to ensure you have enough time to sign in and receive instructions!"
             src={mouse}
           />
           <InfoBubble
             caption="GET LOCKED IN FOR 60 MINUTES"
-            sub="Proin a orci vitae lacus fermentum pulvinar posuere in odio. Ut accumsan sollicitudin est, malesuada malesuada velit sagittis eget."
+            sub="our immersive rooms are designed to transport you to a different world, and it's up to you and your team to work together to solve puzzles and clues within the time limit."
             src={lock}
           />
           <InfoBubble
             caption="FIND CLUES AND SOLVE PUZZLES"
-            sub="Proin a orci vitae lacus fermentum pulvinar posuere in odio. Ut accumsan sollicitudin est, malesuada malesuada velit sagittis eget."
+            sub="hints are available if you get stuck, we ensure   that everyone can enjoy the experience, regardless of skill level. Book your Roomx escape room today for an adventure you won't forget."
             src={bulb}
           />
         </div>

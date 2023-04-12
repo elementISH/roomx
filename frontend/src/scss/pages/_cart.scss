@@ -60,7 +60,7 @@
       color: $greyColor;
 
       &:hover {
-        color: black;
+        color: $secondaryColor;
       }
     }
   }
@@ -104,7 +104,7 @@
     justify-content: space-between;
     font-size: 20px;
     color: lighten($darkBackgroundColor, 60);
-    font-family: "Aquire", sans-serif;
+    font-family: "Aquire";
   }
 
   .amount {

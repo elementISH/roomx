@@ -2,6 +2,9 @@
   .rooms {
     padding: 30px;
   }
+  .header {
+    margin-top: 70px;
+  }
 
   .howToPlay {
     margin-top: 30vh;
@@ -22,6 +25,28 @@
   .information-alert {
     margin-top: 15% !important;
     width: 80%;
+  }
+  .info__bubble {
+    .bubble {
+      width: 70px !important;
+      height: 70px !important;
+      .logo {
+        .logo__img {
+          width: calc(100% - 20px) !important;
+          height: calc(100% - 20px) !important;
+        }
+      }
+    }
+    .caption {
+      padding: 0 !important;
+      .caption__text {
+        font-size: 13px;
+        text-align: center;
+      }
+      .caption__subtext {
+        display: none;
+      }
+    }
   }
   .video-banner__container {
     display: none !important;
@@ -101,36 +126,25 @@
   .howToPlay {
     padding-top: 20px;
   }
-  .info__bubble {
-    .bubble {
-      width: 70px !important;
-      height: 70px !important;
-      .logo {
-        .logo__img {
-          width: calc(100% - 20px) !important;
-          height: calc(100% - 20px) !important;
-        }
-      }
-    }
-    .caption {
-      padding: 0 !important;
-      .caption__text {
-        font-size: 13px;
-        text-align: center;
-      }
-      .caption__subtext {
-        display: none;
-      }
-    }
-  }
+
   .board {
     .caption {
       font-size: 15px !important;
+      top: 50% !important;
     }
   }
   .state {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .card {
+    .content {
+      .description {
+        .description__text {
+          font-size: small;
+        }
+      }
+    }
   }
 
   .status {
@@ -138,10 +152,10 @@
   }
 
   .footer {
-    -webkit-mask-box-image: none;
     padding: 30px;
     .content {
       flex-wrap: wrap;
+      margin-top: 25%;
       .frag {
         margin-top: 20px;
       }

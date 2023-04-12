@@ -84,10 +84,10 @@
     }
   }
   .content {
-    .header {
+    .content__header {
       .header__title {
         color: $secondaryColor;
-        font-family: "Aquire", sans-serif;
+        font-family: "Aquire";
         font-size: 20px;
       }
     }
@@ -95,6 +95,7 @@
       .description__text {
         color: white;
         font-weight: bold;
+        letter-spacing: normal;
       }
     }
     .room-booking__btn {

@@ -1,19 +1,7 @@
 .rooms {
   padding: 90px;
   margin-bottom: 30px;
-  .header {
-    .title {
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: white;
-    }
-    .subtitle {
-      text-align: center;
-      font-family: "Aquire", sans-serif;
-      color: $secondaryColor;
-    }
-  }
+
   .rooms__container {
     padding-top: 20px;
     display: flex;

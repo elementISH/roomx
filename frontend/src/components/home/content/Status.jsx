@@ -13,8 +13,8 @@ export default function Status(props) {
           {data &&
             data?.map((state) => (
               <div key={state.key.toString()} className="state">
-                <p className="number" data-text={state.number}>
-                  {state.number}
+                <p className="number" data-text={state.number.toLocaleString()}>
+                  {state.number.toLocaleString()}
                 </p>
                 <p className="indicator">{state.indicator}</p>
                 <FontAwesomeIcon

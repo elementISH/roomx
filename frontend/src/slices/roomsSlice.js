@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+import { useGetDataQuery } from "./dataApi";
 
 const initialState = {
   items: [],
@@ -7,12 +8,8 @@ const initialState = {
 };
 
 export const roomsFetch = createAsyncThunk("rooms/roomsFetch", async () => {
-  try {
-    const response = await axios.get("https://roomx-provider.vercel.app/rooms");
-    return response.data;
-  } catch (error) {
-    console.log(error);
-  }
+  const { data, error } = useGetDataQuery();
+  return error ? console.error(error) : data;
 });
 
 const roomsSlice = createSlice({

@@ -74,7 +74,7 @@ const Cart = () => {
                 <span>Subtotal</span>
                 <span className="amount">${cart.cartTotalAmount}</span>
               </div>
-              <p>Taxes and shipping calculated at checkout</p>
+              <p>Taxes are calculated at checkout</p>
               <button
                 className="checkout-button add-pointer"
                 onClick={() => {
