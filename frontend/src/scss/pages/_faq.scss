@@ -28,10 +28,10 @@
       }
 
       .collapsible__content {
-        height: 0;
+        max-height: 0;
         opacity: 0;
         overflow: hidden;
-        transition: height 1s, opacity 1s;
+        transition: max-height 1s, opacity 1s;
       }
 
       .collapsible--open {
@@ -40,7 +40,7 @@
         }
 
         .collapsible__content {
-          height: 100%;
+          max-height: 600px;
           opacity: 1;
         }
       }

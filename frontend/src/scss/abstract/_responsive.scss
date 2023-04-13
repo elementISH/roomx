@@ -206,6 +206,11 @@
       min-width: 230px !important;
     }
   }
+  .footer {
+    .content {
+      margin-top: 35%;
+    }
+  }
 }
 @media (max-width: 320px) {
   .menu-items {
